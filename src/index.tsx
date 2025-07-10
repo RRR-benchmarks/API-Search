@@ -17,3 +17,13 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+declare global {         
+  interface Window {         
+    globalCount: number;         
+  }         
+}
+
+if (typeof window !== 'undefined') {         
+  window.globalCount = window.globalCount || 0;         
+}

@@ -5,6 +5,7 @@ import Search from './components/Search';
 import Results from './components/Results';
 import './App.css';
 const App = memo(function App() {
+  console.log(window.globalCount++);
   const [source, setSource] = useState('StackOverflow');
   const [query, setQuery] = useState('');
   return <div className="App">

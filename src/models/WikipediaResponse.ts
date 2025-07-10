@@ -1,10 +1,9 @@
 export interface WikipediaResponse {
-    type?: number
-    title: string,
-    data: WikiObj[]
+  type?: number;
+  title: string;
+  data: WikiObj[];
 }
 export interface WikiObj {
-    title: string
-    link: string
+  title: string;
+  link: string;
 }
-

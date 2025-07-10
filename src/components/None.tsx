@@ -3,6 +3,7 @@ import React from 'react';
 import Nothing from "../assets/nothing.jpeg";
 import "../styles/None.css";
 const None = memo(function None() {
+  console.log(window.globalCount++);
   return <div className='none'>
         <img className='nothing' src={Nothing} alt="nothing" />
         <h1>No results found :\</h1>

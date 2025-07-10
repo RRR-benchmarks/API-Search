@@ -13,6 +13,7 @@ const Search = memo(function Search({
   source,
   setSource
 }: SearchType) {
+  console.log(window.globalCount++);
   const [tempQuery, setTempQuery] = useState('');
   const searchText = useRef<HTMLInputElement>(null);
   function handleSearchChange(e: React.FormEvent<HTMLFormElement>) {
